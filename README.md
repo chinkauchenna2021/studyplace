@@ -1,2 +1,2 @@
 # studyplace
-Study place for programming
+Study place tutoring programming languages
