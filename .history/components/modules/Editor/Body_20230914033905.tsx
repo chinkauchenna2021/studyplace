@@ -1,14 +1,11 @@
 'use client'
-import React, { useRef } from 'react';
+
 import Editor, { useMonaco } from '@monaco-editor/react';
 
 
 export default function EditorPage() {
-  const editorRef = useRef(null);
 
-  function handleEditorDidMount(editor:any, monaco:any) {
-
-    console.log(editor.getValue());
+function handleEditorDidMount(editor, monaco) {
     editorRef.current = editor;
   }
 
@@ -23,7 +20,7 @@ export default function EditorPage() {
    defaultLanguage="javascript"
    defaultValue="const number = 20;"
   //  beforeMount={handleEditorWillMount}
-   onMount={handleEditorDidMount}
+  //  onMount={handleEditorDidMount}
         
           />       
         </div>
