@@ -8,7 +8,7 @@ export default function EditorPage() {
 
   function handleEditorDidMount(editor:any, monaco:any) {
 
-    console.log(editor.getValue());
+    console.log("EDI"+editor , "MONACO "+ monaco)
     editorRef.current = editor;
   }
 

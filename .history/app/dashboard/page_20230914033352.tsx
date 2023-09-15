@@ -12,6 +12,9 @@ import DashboardSideBar from '@/components/modules/DashboardSideBar/Body';
 function Dashboard() {
   const [editorState, setEditorState] = useState({});
 
+
+
+  
     const defaultPanelWidth = window.screen.width / 2.5;
 
     return (
