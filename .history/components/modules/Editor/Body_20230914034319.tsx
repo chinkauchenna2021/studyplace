@@ -4,11 +4,8 @@ import Editor, { useMonaco } from '@monaco-editor/react';
 
 
 export default function EditorPage() {
-  const editorRef = useRef(null);
 
   function handleEditorDidMount(editor:any, monaco:any) {
-
-    console.log(editor.getValue());
     editorRef.current = editor;
   }
 

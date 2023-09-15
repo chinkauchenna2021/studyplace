@@ -12,11 +12,14 @@ import DashboardSideBar from '@/components/modules/DashboardSideBar/Body';
 function Dashboard() {
   const [editorState, setEditorState] = useState({});
 
+
+
+  
     const defaultPanelWidth = window.screen.width / 2.5;
 
     return (
       <div className="w-full max-h-screen grid grid-cols-5 overflow-hidden fixed">
-        <DashboardSideBar />
+          <DashboardSideBar />
         <div className="flex flex-col col-span-4 border w-full">
           <div className="h-10 grid grid-cols-2 w-full">
               <div className="w-full h-full col-span-1 items-center flex justify-between">
