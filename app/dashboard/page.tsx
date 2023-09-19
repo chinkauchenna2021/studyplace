@@ -7,7 +7,9 @@ import { Button } from '@/components/ui/button';
 
 import ModalBox from '@/components/modules/ModalBox/Body';
 import SelectBtn from '@/components/modules/Select/Body';
-import DashboardSideBar from '@/components/modules/DashboardSideBar/Body';
+import {SideNavComponent} from '@/components/modules/SideNav/body';
+import {SideNavViewComponent} from '@/components/modules/SideNav/view';
+// import SiderNav from '@/components/'
 
 function Dashboard() {
   const [editorState, setEditorState] = useState({});
@@ -16,7 +18,10 @@ function Dashboard() {
 
     return (
       <div className="w-full max-h-screen grid grid-cols-5 overflow-hidden fixed">
-        <DashboardSideBar />
+        <div className="flex  border w-full h-full ">
+             <div className='w-[20%]'><SideNavComponent/></div>
+             <div className='w-[80%]'><SideNavViewComponent/></div>
+        </div>
         <div className="flex flex-col col-span-4 border w-full">
           <div className="h-10 grid grid-cols-2 w-full">
               <div className="w-full h-full col-span-1 items-center flex justify-between">
