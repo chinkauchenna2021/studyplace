@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/dashboard/page.tsx", "components/modules/InputOutputSplit/Body.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/dashboard/page.tsx", "components/modules/InputOutputSplit/Body.tsx", "app/style.ts"],
   "exclude": ["node_modules"]
 }
