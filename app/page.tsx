@@ -17,25 +17,25 @@ process.env.NODE_NO_WARNINGS = 'stream/web';
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between md:p-24 p-4 relative overflow-hidden">
-    <div className={` ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Hero />
+      <div className={` ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Hero />
+        </div>
       </div>
-     </div>
-     <div className={` ${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Companies/>
-        
-        <Business />
-        <Billing />
-     
-        <Testimonials />
-  
-        <CTA />
-        <Footer/>
+      <div className={` ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Companies />
+
+          <Business />
+          <Billing />
+
+          <Testimonials />
+
+          <CTA />
+          <Footer />
+        </div>
       </div>
-    </div>
-      
+
     </main>
   )
 }
